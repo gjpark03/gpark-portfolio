@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" 
+          content="Grace Park's portfolio website.">
+    <title>Portfolio | Homepage</title>
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+    <div id="header">
+        <a href="index.html" id="home-icon">
+            <img src="imgs/home-icon.png" alt="link to homepage" class="icon">
+        </a>
+        <h1 class="fade-in"> Portfolio </h1>
+        <div id="header-line" class="fade-in">
+            <div class="line"></div>
+            <div class="diamond"></div>
+            <div class="line"></div>
+        </div>
+        <div id="social-buttons" class="fade-in">
+            <a href="https://linkedin.com/in/grace-park-a14aa9239/" class="button linkedin">
+                <img src="imgs/linkedin.png" alt="LinkedIn" class="icon">LinkedIn
+            </a>
+            <a href="https://github.com/gjpark03" class="button github">
+                <img src="imgs/github.png" alt="GitHub" class="icon">GitHub
+            </a>
+            <a href="mailto:gjpark@usc.edu" class="button email">
+                <img src="imgs/mail-icon.png" alt="Email" class="icon">Email
+            </a>
+        </div>
+    </div>
+
+    <div id="namecard" class="fade-in">
+        <img src="imgs/profile-pic.jpg" class="profile-img" alt="Profile Picture">
+        <div class="namecard-text">
+            <h2>ABOUT ME</h2>
+            <p>
+                Hello, my name is Grace Park. I am a first-generation Senior Computer Science student at the University of Southern California. 
+                Currently I am also an intern at the Los Angeles Department of Water and Power.
+                My dream job is to be a full time software engineer or video game developer. 
+                Outside of coding, I am very active in the dance community at both USC and in my hometown of San Jose. 
+                I am also a black belt in Taekwondo with over 10 years of experience, and am part of the USC Taekwondo team.
+            </p>
+        </div>
+    </div>
+
+    <div id="main" class="fade-in">
+        <ul id="nav">
+            <li><a href="resume.html">EXPERIENCE</a></li>
+            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="activities.html">ACTIVITIES</a></li>
+            <li><a href="certifications.html">CERTIFICATIONS</a></li>
+        </ul>
+        <div class="website-features">
+            <h3>- Website Features -</h3>
+            <h2>Experience - Work Experience, Skills, Education, Classes</h2>
+            <h2>Projects - Video Games, Software Development Team Projects and Solo Projects</h2>
+            <h2>Activities - Organizations, Clubs, Hobbies</h2>
+            <h2>Certifications - Online Education</h2>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Grace Park. All rights reserved. | VSCode | HTML/CSS </p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            fadeElements.forEach(element => {
+                element.classList.add('fade-in-visible');
+            });
+        });
+    </script>
+    
+</body>
+</html>

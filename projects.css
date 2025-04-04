@@ -1,0 +1,57 @@
+#main {
+    color: #21ebff;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.project-desc {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.project-title {
+    flex: 1;
+    text-align: left;
+    color: white;
+}
+
+.project-date {
+    text-align: right;
+    font-style: italic;
+}
+
+.project-role {
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 5px;
+    color: #21aaff;
+}
+
+.project-links {
+    display: flex;
+    margin-top: 10px;
+}
+
+.project-bullets {
+    margin-left: 20px;
+}
+
+.ui {
+    background-color: green;
+}
+
+.programming {
+    background-color: purple;
+}
+
+.environment {
+    background-color: sienna;
+}
+
+.slides {
+    background-color: goldenrod;
+}
+
+.video {
+    background-color: darkred;
+}

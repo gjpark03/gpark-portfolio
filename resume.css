@@ -1,0 +1,94 @@
+
+#main {
+    color: #21ebff;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+h2 {
+    color: white;
+}
+
+.work-location {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.work-title {
+    flex: 1;
+    text-align: left;
+}
+
+.work-time {
+    text-align: right;
+    font-style: italic;
+}
+
+.job-title {
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 5px;
+    color: #21aaff;
+}
+
+.work-bullets {
+    margin-left: 20px;
+}
+
+.college-info {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.college-name {
+    flex: 1; 
+    text-align: left; 
+}
+
+.college-location {
+    text-align: right; 
+}
+
+.college-degree {
+    flex: 1; 
+    text-align: left; 
+    font-style: italic;
+}
+
+.grade-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.grade-table td {
+    border: 2px solid #21ebff;
+    padding: 10px;
+    text-align: left;
+}
+
+.grade-table td:first-child {
+    width: 60%; 
+}
+
+.grade-table td:nth-child(2),
+.grade-table td:nth-child(3) {
+    width: 20%;
+    text-align: center;
+}
+
+#skills-table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    text-align: center;
+}
+
+#skills-table li {
+    padding: 10px;
+    margin-right: 23px;
+    color: white;
+    border-radius: 5px;
+    width: 250px;
+}
