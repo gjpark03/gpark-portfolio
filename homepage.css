@@ -101,29 +101,34 @@ body {
     animation: fadeIn 1s ease forwards;
 }
 
-.portfolio-title.fade-in {
+#home-icon.fade-in {
     animation-delay: 0s;
 }
 
-#header-line.fade-in {
+.portfolio-title.fade-in {
     animation-delay: 0.3s;
 }
 
-#social-buttons.fade-in {
+#header-line.fade-in {
     animation-delay: 0.6s;
 }
 
+#social-buttons.fade-in {
+    animation-delay: 0.9s;
+}
+
 #namecard.fade-in {
-    animation-delay: 1s;
+    animation-delay: 1.2s;
 }
 
 #main.fade-in {
-    animation-delay: 1.4s;
+    animation-delay: 1.5s;
 }
 
 footer.fade-in {
     animation-delay: 1.8s;
 }
+
 
 /* END of animations */
 

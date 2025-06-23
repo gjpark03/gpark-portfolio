@@ -11,6 +11,7 @@
 
 
 body {
+    color: white;
     background-color: rgb(1, 17, 31);
     font-family: 'PixelFont', sans-serif;
     width: 1000px;
@@ -25,35 +26,41 @@ h1 {
 }
 
 h2 {
-    color: #21ebff;
+    color: white;
     font-family: 'Space Grotesk', sans-serif;
     margin-bottom: 0px;
 }
 
 hr {
-    border-color:#21ebff
+    border-color: white;
+}
+
+li {
+    color: white;
 }
 
 #header {
+    position: relative;
+    margin-top: 60px;
     text-align: center;
-    padding-top: 20px;
 }
 
+/* HOME ICON - START */
 #home-icon {
     position: absolute;
-    top: 90px;
-    left: 50px;
-    display: inline-block;
+    top: 15%; 
+    transform: translateY(-50%);
+    left: 0;
+    z-index: 10;
 }
 
 #home-icon img.icon {
-    width: 40px; 
+    width: 40px;
     height: auto;
 }
 
-#home-icon img:hover {
-    opacity: 0.5;
-}
+
+/* HOME ICON - END */
 
 /* HEADER LINE - START */
 
