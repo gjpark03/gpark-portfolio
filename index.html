@@ -15,20 +15,20 @@
         <a href="index.html" id="home-icon">
             <img src="imgs/home-icon.png" alt="link to homepage" class="icon">
         </a>
-        <h1 class="fade-in"> Portfolio </h1>
+        <h1 class="fade-in portfolio-title"> Portfolio </h1>
         <div id="header-line" class="fade-in">
             <div class="line"></div>
-            <div class="diamond"></div>
+            <div class="pokeball"></div>
             <div class="line"></div>
         </div>
         <div id="social-buttons" class="fade-in">
-            <a href="https://linkedin.com/in/grace-park-a14aa9239/" class="button linkedin">
+            <a href="https://linkedin.com/in/grace-park-a14aa9239/" class="button linkedin" style="background-color: #ffc800;">
                 <img src="imgs/linkedin.png" alt="LinkedIn" class="icon">LinkedIn
             </a>
-            <a href="https://github.com/gjpark03" class="button github">
+            <a href="https://github.com/gjpark03" class="button github" style="background-color: #0a8dff;">
                 <img src="imgs/github.png" alt="GitHub" class="icon">GitHub
             </a>
-            <a href="mailto:gjpark@usc.edu" class="button email">
+            <a href="mailto:gjpark@usc.edu" class="button email" style="background-color: #24cd06;">
                 <img src="imgs/mail-icon.png" alt="Email" class="icon">Email
             </a>
         </div>
@@ -37,7 +37,7 @@
     <div id="namecard" class="fade-in">
         <img src="imgs/profile-pic.jpg" class="profile-img" alt="Profile Picture">
         <div class="namecard-text">
-            <h2>ABOUT ME</h2>
+            <h2>About Me</h2>
             <p>
                 Hello, my name is Grace Park. I am a first-generation Senior Computer Science student at the University of Southern California. 
                 Currently I am also an intern at the Los Angeles Department of Water and Power.
@@ -50,21 +50,21 @@
 
     <div id="main" class="fade-in">
         <ul id="nav">
-            <li><a href="resume.html">EXPERIENCE</a></li>
-            <li><a href="projects.html">PROJECTS</a></li>
-            <li><a href="activities.html">ACTIVITIES</a></li>
-            <li><a href="certifications.html">CERTIFICATIONS</a></li>
-        </ul>
+            <li><a href="resume.html" class="fade-in">EXPERIENCE</a></li>
+            <li><a href="projects.html" class="fade-in">PROJECTS</a></li>
+            <li><a href="activities.html" class="fade-in">ACTIVITIES</a></li>
+            <li><a href="certifications.html" class="fade-in">CERTIFICATIONS</a></li>
+        </ul>        
         <div class="website-features">
             <h3>- Website Features -</h3>
             <h2>Experience - Work Experience, Skills, Education, Classes</h2>
-            <h2>Projects - Video Games, Software Development Team Projects and Solo Projects</h2>
+            <h2>Projects - Video Games, Software Development Team and Solo Projects</h2>
             <h2>Activities - Organizations, Clubs, Hobbies</h2>
             <h2>Certifications - Online Education</h2>
         </div>
     </div>
 
-    <footer>
+    <footer class="fade-in">
         <div class="footer-container">
             <p>&copy; 2024 Grace Park. All rights reserved. | VSCode | HTML/CSS </p>
         </div>
@@ -72,12 +72,22 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            const fadeElements = document.querySelectorAll('.fade-in');
-            fadeElements.forEach(element => {
-                element.classList.add('fade-in-visible');
+            const navLinks = document.querySelectorAll('#nav a');
+        
+            navLinks.forEach(link => {
+                link.addEventListener('mouseenter', () => {
+                    // Remove class if user hovers again
+                    link.classList.remove('hover-complete');
+                });
+        
+                link.addEventListener('mouseleave', () => {
+                    // When the hover ends (mouse leaves), add the class
+                    link.classList.add('hover-complete');
+                });
             });
         });
     </script>
+    
     
 </body>
 </html>

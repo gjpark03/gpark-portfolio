@@ -1,5 +1,10 @@
+@font-face {
+    font-family: 'PixelFont';
+    src: url('fonts/pixelfont.otf') format('truetype');
+}
+
 h3 {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'PixelFont', sans-serif;
     text-align: center;
     color: white;
     font-size: 40px;
@@ -12,12 +17,15 @@ h3 {
 #namecard {
     display: flex; 
     align-items: center; 
-    color: #fd4556;
+    background-color: rgba(0, 0, 0, 0.7);  
+    color: white;                           
     text-align: center;
     padding: 20px;
     margin-bottom: 50px;
-    border: solid 2px #fd4556;
+    border: 5px solid black;                       
+    border-radius: 10px;                    
 }
+
 
 .profile-img {
     width: 150px; 
@@ -32,6 +40,7 @@ h3 {
 }
 
 .namecard-text h2 {
+    color: white; 
     margin: 0; 
 }
 
@@ -39,3 +48,82 @@ h3 {
     font-family: 'Space Grotesk', sans-serif;
     margin: 5px 0 0 0; 
 }
+
+.website-features {
+    background-image: url('imgs/woodback.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 976px;    
+    height: 380px;   
+    padding: 0 20 20 0px;
+    border: 5px solid black;
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+}
+
+.website-features h3 {
+    margin-top: 50px;
+}
+
+.website-features h2 {
+    color: white;
+}
+
+
+body {
+    background-image: url('imgs/Pokemon_Background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.portfolio-title {
+    font-family: 'PixelFont', sans-serif;
+}
+
+/* START of animations */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+}
+
+.portfolio-title.fade-in {
+    animation-delay: 0s;
+}
+
+#header-line.fade-in {
+    animation-delay: 0.3s;
+}
+
+#social-buttons.fade-in {
+    animation-delay: 0.6s;
+}
+
+#namecard.fade-in {
+    animation-delay: 1s;
+}
+
+#main.fade-in {
+    animation-delay: 1.4s;
+}
+
+footer.fade-in {
+    animation-delay: 1.8s;
+}
+
+/* END of animations */
+

@@ -1,13 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
 
 @font-face {
-    font-family: "valorant";
-    src: url("fonts/valorant.ttf");
+    font-family: 'PixelFont';
+    src: url('fonts/pixelfont.otf') format('truetype');
 }
+
+:root {
+    --nav-accent-color: white;
+}
+
 
 body {
     background-color: rgb(1, 17, 31);
-    font-family: valorant;
+    font-family: 'PixelFont', sans-serif;
     width: 1000px;
     margin-right: auto;
     margin-left: auto;
@@ -50,6 +55,8 @@ hr {
     opacity: 0.5;
 }
 
+/* HEADER LINE - START */
+
 #header-line {
     display: flex;
     align-items: center;
@@ -58,21 +65,48 @@ hr {
 }
 
 .line {
-    height: 2px;
-    width: 150px;
-    background-color: #21ebff;
+    height: 3px;
+    width: 225px;
+    background-color: white;  
 }
 
-.diamond {
-    width: 0;
-    height: 0;
-    border: 10px solid transparent;
-    border-top-color: #21ebff;
-    border-bottom-color: #21ebff;
-    transform: rotate(45deg);
-    margin: 0 10px; 
+.pokeball {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: white;
+    border: 3px solid black;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 10px;
 }
 
+.pokeball::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: red; 
+}
+
+.pokeball::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 6px;
+    height: 6px;
+    background: white;
+    border: 2px solid black;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* HEADER LINE - END */
+
+/* SOCIAL BUTTONS - START */
 #social-buttons {
     display: flex;
     justify-content: center;
@@ -82,25 +116,30 @@ hr {
 .button {
     text-decoration: none;
     color: white;
-    background-color: #21ebff;
-    padding: 10px 20px;
+    padding: 20px 30px; 
     margin: 0 10px;
     border-radius: 5px;
     transition: background-color 0.3s;
     display: flex;
     align-items: center;
-    background-color: #fd4556;
+    justify-content: center;  
+    min-width: 120px;         
+    min-height: 30px;         
+    border: 4px solid black;
 }
 
 .button img.icon {
-    width: 20px;
-    height: 20px;
+    width: 24px;  
+    height: 24px;
     margin-right: 10px; 
 }
 
 .button:hover {
-    background-color: #1fa9c1;
+    transform: translateY(-5px);  
+    opacity: 0.7;              
 }
+
+/* SOCIAL BUTTONS - END */
 
 #main {
     margin: 0;
@@ -119,21 +158,22 @@ hr {
 
 #nav a {
     position: relative;
-    color: #21ebff;
+    color: #000;
     text-decoration: none;
     padding: 10px 30px;
     margin: 0 20px;
     text-align: center;
     letter-spacing: 2px;
     font-size: 20px;
+    font-weight: bold;
     overflow: hidden;
     transition: 0.5s;
 }
 
 #nav a:hover {
-    background-color: #21ebff;
+    background-color: var(--nav-accent-color);
     color: #111;
-    box-shadow: 0 0 50px #21ebff;
+    box-shadow: 0 0 50px var(--nav-accent-color);
     transition-delay: 0.5s;
 }
 
@@ -144,13 +184,22 @@ hr {
     height: 10px;
     top: 0;
     left: 0;
-    border-top: 2px solid #21ebff;
-    border-left: 2px solid #21ebff;
+    border-top: 3px solid black;
+    border-left: 3px solid black;
     transition: 0.5s;
     box-sizing: border-box;
 }
 
 #nav a:hover:before {
+    border-top: 3px solid var(--nav-accent-color);
+    border-left: 3px solid var(--nav-accent-color);
+    width: 100%;
+    height: 100%;
+}
+
+#nav a:hover:after {
+    border-bottom: 3px solid var(--nav-accent-color);
+    border-right: 3px solid var(--nav-accent-color);
     width: 100%;
     height: 100%;
 }
@@ -162,24 +211,18 @@ hr {
     height: 10px;
     bottom: 0;
     right: 0;
-    border-bottom: 2px solid #21ebff;
-    border-right: 2px solid #21ebff;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
     transition: 0.5s;
     box-sizing: border-box;
-
-}
-
-#nav a:hover:after {
-    width: 100%;
-    height: 100%;
 }
 
 .footer-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    color: #21aaff;
-    font-family: 'Space Grotesk', sans-serif;
+    color: white;
+    font-family: 'PixelFont', sans-serif;
     padding: 20px;
 }
 
