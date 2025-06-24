@@ -23,6 +23,7 @@ h1 {
     color: white;
     font-size: 80px;
     margin-bottom: 0;
+    text-shadow: 1px 1px 2px black;
 }
 
 h2 {
@@ -242,6 +243,7 @@ li {
 }
 
 .footer-container {
+    text-shadow: 1px 1px 2px black;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
