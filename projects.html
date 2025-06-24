@@ -11,27 +11,37 @@
     <link rel="stylesheet" href="projects.css">
 </head>
 <body>
-    <div id="header">
-        <a href="index.html" id="home-icon">
-            <img src="imgs/home-icon.png" alt="link to homepage" class="icon">
+
+    <div id="header" class="fade-in">
+        
+        <a href="index.html" id="home-icon" class="fade-in">
+          <img src="imgs/home-icon.png" alt="link to homepage" class="icon" />
         </a>
-        <h1> PROJECTS </h1>
-        <div id="header-line">
+        <h1 class="fade-in">PROJECTS</h1>
+
+        <div id="header-line" class="fade-in">
             <div class="line"></div>
-            <div class="diamond"></div>
+            <div class="pokeball"></div>
+            <div class="pokeball"></div>
+            <div class="pokeball active"></div>
+            <div class="pokeball"></div>
+            <div class="pokeball"></div>
+            <div class="pokeball"></div>
             <div class="line"></div>
         </div>
-        <div id="social-buttons">
-            <a href="https://linkedin.com/in/grace-park-a14aa9239/" class="button linkedin">
-                <img src="imgs/linkedin.png" alt="LinkedIn" class="icon">LinkedIn
+
+        <div id="social-buttons" class="fade-in">
+            <a href="https://linkedin.com/in/grace-park-a14aa9239/" target="_blank" class="button linkedin" style="background-image: url('imgs/social-1.png'); background-size: cover; width: 188px; height: 78px;">
+                <img src="imgs/linkedin.png" alt="LinkedIn Icon" class="icon">LinkedIn
             </a>
-            <a href="https://github.com/gjpark03" class="button github">
-                <img src="imgs/github.png" alt="GitHub" class="icon">GitHub
+            <a href="https://github.com/gjpark03" target="_blank" class="button github" style="background-image: url('imgs/social-2.png'); background-size: cover; width: 188px; height: 78px;">
+                <img src="imgs/github.png" alt="GitHub Icon" class="icon">GitHub
             </a>
-            <a href="mailto:gjpark@usc.edu" class="button email">
-                <img src="imgs/mail-icon.png" alt="Email" class="icon">Email
+            <a href="mailto:gjpark@usc.edu" target="_blank" class="button email" style="background-image: url('imgs/social-3.png'); background-size: cover; width: 188px; height: 78px;">
+                <img src="imgs/mail-icon.png" alt="Email Icon" class="icon">Email
             </a>
-        </div>
+        </div>       
+
     </div>
 
     <div id="main">
@@ -192,11 +202,21 @@
             </div>
     </div>
 
-    <footer>
+    <footer class="fade-in">
         <div class="footer-container">
-            <p>&copy; Last Updated: Feb 2025 | Grace Park. All rights reserved. | VSCode | HTML/CSS </p>
+          <p>&copy; Last Updated: June 2025 | Grace Park. All rights reserved. | VSCode | HTML/CSS</p>
         </div>
     </footer>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          const fadeElements = document.querySelectorAll('.fade-in');
+          fadeElements.forEach((el, index) => {
+            el.style.animation = `fadeIn 1s ease ${index * 0.3}s forwards`;
+          });
+        });
+    </script>
+
     
 </body>
 </html>

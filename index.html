@@ -16,22 +16,30 @@
             <img src="imgs/home-icon.png" alt="link to homepage" class="icon">
         </a>
         <h1 class="fade-in portfolio-title"> Portfolio </h1>
+
         <div id="header-line" class="fade-in">
             <div class="line"></div>
+            <div class="pokeball active"></div>
+            <div class="pokeball"></div>
+            <div class="pokeball"></div>
+            <div class="pokeball"></div>
+            <div class="pokeball"></div>
             <div class="pokeball"></div>
             <div class="line"></div>
         </div>
+        
         <div id="social-buttons" class="fade-in">
-            <a href="https://linkedin.com/in/grace-park-a14aa9239/" class="button linkedin" style="background-color: #ffc800;">
-                <img src="imgs/linkedin.png" alt="LinkedIn" class="icon">LinkedIn
+            <a href="https://linkedin.com/in/grace-park-a14aa9239/" target="_blank" class="button linkedin" style="background-image: url('imgs/social-1.png'); background-size: cover; width: 188px; height: 78px;">
+                <img src="imgs/linkedin.png" alt="LinkedIn Icon" class="icon">LinkedIn
             </a>
-            <a href="https://github.com/gjpark03" class="button github" style="background-color: #0a8dff;">
-                <img src="imgs/github.png" alt="GitHub" class="icon">GitHub
+            <a href="https://github.com/gjpark03" target="_blank" class="button github" style="background-image: url('imgs/social-2.png'); background-size: cover; width: 188px; height: 78px;">
+                <img src="imgs/github.png" alt="GitHub Icon" class="icon">GitHub
             </a>
-            <a href="mailto:gjpark@usc.edu" class="button email" style="background-color: #24cd06;">
-                <img src="imgs/mail-icon.png" alt="Email" class="icon">Email
+            <a href="mailto:gjpark@usc.edu" target="_blank" class="button email" style="background-image: url('imgs/social-3.png'); background-size: cover; width: 188px; height: 78px;">
+                <img src="imgs/mail-icon.png" alt="Email Icon" class="icon">Email
             </a>
-        </div>
+        </div>        
+        
     </div>
 
     <div id="namecard" class="fade-in">
@@ -76,12 +84,10 @@
         
             navLinks.forEach(link => {
                 link.addEventListener('mouseenter', () => {
-                    // Remove class if user hovers again
                     link.classList.remove('hover-complete');
                 });
         
                 link.addEventListener('mouseleave', () => {
-                    // When the hover ends (mouse leaves), add the class
                     link.classList.add('hover-complete');
                 });
             });

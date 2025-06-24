@@ -1,5 +1,13 @@
+body {
+    background-image: url('imgs/projects-background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
 #main {
-    color: #21ebff;
+    color: white;
     font-family: 'Space Grotesk', sans-serif;
 }
 
