@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+@font-face {
+    font-family: 'PixelFont';
+    src: url('fonts/pixelfont.otf') format('truetype');
+}
+
+body {
+    background-image: url('imgs/cert-background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+h2 {
+    font-family: PixelFont;
+    text-shadow: 1px 1px 2px black;
+
+}
+
+#linkedin-learning li {
+    font-family: 'Space Grotesk', sans-serif;
+}
