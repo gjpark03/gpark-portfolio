@@ -6,7 +6,7 @@
 }
 
 :root {
-    --nav-accent-color: white;
+    --nav-accent-color: rgb(0, 242, 255);
 }
 
 
@@ -17,7 +17,14 @@ body {
     width: 1000px;
     margin-right: auto;
     margin-left: auto;
+    background-image: url('imgs/blue-background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
+
+
 
 h1 {
     color: white;
@@ -183,7 +190,7 @@ li {
 
 #nav a {
     position: relative;
-    color: #000;
+    color: white;
     text-decoration: none;
     padding: 10px 30px;
     margin: 0 20px;
@@ -197,7 +204,7 @@ li {
 
 #nav a:hover {
     background-color: var(--nav-accent-color);
-    color: #111;
+    color: black;
     box-shadow: 0 0 50px var(--nav-accent-color);
     transition-delay: 0.5s;
 }
@@ -209,8 +216,8 @@ li {
     height: 10px;
     top: 0;
     left: 0;
-    border-top: 3px solid black;
-    border-left: 3px solid black;
+    border-top: 3px solid white;
+    border-left: 3px solid white;
     transition: 0.5s;
     box-sizing: border-box;
 }
@@ -236,8 +243,8 @@ li {
     height: 10px;
     bottom: 0;
     right: 0;
-    border-bottom: 3px solid black;
-    border-right: 3px solid black;
+    border-bottom: 3px solid white;
+    border-right: 3px solid white;
     transition: 0.5s;
     box-sizing: border-box;
 }

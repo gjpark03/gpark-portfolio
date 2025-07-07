@@ -70,15 +70,6 @@ h3 {
     color: white;
 }
 
-
-body {
-    background-image: url('imgs/Pokemon_Background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-}
-
 .portfolio-title {
     font-family: 'PixelFont', sans-serif;
 }

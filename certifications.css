@@ -4,14 +4,6 @@
     src: url('fonts/pixelfont.otf') format('truetype');
 }
 
-body {
-    background-image: url('imgs/cert-background.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-}
-
 h2 {
     font-family: PixelFont;
     text-shadow: 1px 1px 2px black;
