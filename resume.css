@@ -35,7 +35,7 @@
     font-size: 20px;
 }
 
-.work-title {
+.job-title {
     flex: 1;
     text-align: left;
 }
@@ -45,7 +45,7 @@
     font-style: italic;
 }
 
-.job-title {
+.work-title {
     font-size: 18px;
     font-style: italic;
     margin-top: 5px;
@@ -86,13 +86,14 @@
     text-align: left; 
 }
 
-.college-location {
-    text-align: right; 
+.college-honors {
+    flex: 1; 
+    text-align: left; 
 }
 
 .college-degree {
     flex: 1; 
-    text-align: left; 
+    text-align: right; 
     font-style: italic;
 }
 
