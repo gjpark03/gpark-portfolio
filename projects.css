@@ -107,3 +107,30 @@
 .video {
     background-color: darkred;
 }
+
+/* Scrollable Projects Container */
+.projects-scroll-container {
+    height: 600px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    padding-right: 10px;
+}
+
+.projects-scroll-container::-webkit-scrollbar {
+    width: 24px;
+}
+
+.projects-scroll-container::-webkit-scrollbar-track {
+    background: black;
+    border: 2px solid black;
+}
+
+.projects-scroll-container::-webkit-scrollbar-thumb {
+    background: #4781c1; 
+    border: 5px solid black;
+    border-radius: 0; 
+}
+
+.projects-scroll-container::-webkit-scrollbar-thumb:hover {
+    background: #2563eb; 
+}
